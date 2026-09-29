@@ -58,3 +58,40 @@ document.querySelectorAll('.video-frame').forEach(frame => {
     video.controls = false;
   });
 });
+
+// renders carousel
+document.querySelectorAll('.carousel').forEach(car => {
+  const track = car.querySelector('.carousel-track');
+  const slides = [...track.children];
+  const count = car.querySelector('.car-count');
+  const current = () => {
+    const mid = track.scrollLeft + track.clientWidth / 2;
+    let best = 0, dist = Infinity;
+    slides.forEach((s, i) => {
+      const d = Math.abs(s.offsetLeft + s.offsetWidth / 2 - mid);
+      if (d < dist) { dist = d; best = i; }
+    });
+    return best;
+  };
+  const go = (i) => {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    const s = slides[i];
+    track.scrollTo({ left: s.offsetLeft - (track.clientWidth - s.offsetWidth) / 2, behavior: 'smooth' });
+  };
+  track.addEventListener('scroll', () => { count.textContent = (current() + 1) + ' / ' + slides.length; }, { passive: true });
+  car.querySelectorAll('.car-btn').forEach(b => b.addEventListener('click', () => go(current() + Number(b.dataset.dir))));
+  car.tabIndex = 0;
+  car.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') go(current() + 1);
+    if (e.key === 'ArrowLeft') go(current() - 1);
+  });
+  // only load/play looping clips once visible
+  const vids = car.querySelectorAll('video');
+  if ('IntersectionObserver' in window) {
+    const vio = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.preload = 'auto'; e.target.play().catch(() => {}); }
+      else e.target.pause();
+    }), { threshold: 0.3 });
+    vids.forEach(v => vio.observe(v));
+  }
+});

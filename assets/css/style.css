@@ -376,6 +376,8 @@ header.scrolled{
 }
 .project-media video, .project-media img.single{ width:100%; }
 
+.video-frame.square video{ aspect-ratio: 1/1; object-fit:contain; }
+.video-frame + .video-frame{ margin-top:2px; }
 .video-frame{ position:relative; }
 .video-frame video{ width:100%; aspect-ratio: 16/10; object-fit:cover; background:#000; }
 .play-btn{
@@ -533,6 +535,35 @@ footer{
 }
 footer a:hover{ color: var(--fg); }
 
+/* ---------- renders ---------- */
+.renders{ padding: 90px 0; border-top: 1px solid var(--line); }
+.render-feature{ border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--bg-alt); margin-bottom:28px; }
+.render-feature .video-frame video{ aspect-ratio:16/9; }
+.render-caption{ padding:20px 26px 24px; }
+.render-caption h3{ margin:0 0 4px; font-family:var(--ff-display); font-size:1.3rem; }
+.render-caption p{ margin:0; color:var(--muted); }
+.carousel-track{
+  display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory;
+  scrollbar-width:none; -webkit-overflow-scrolling:touch;
+}
+.carousel-track::-webkit-scrollbar{ display:none; }
+.slide{
+  flex:0 0 min(78%, 760px); margin:0; scroll-snap-align:center;
+  border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--bg-alt);
+}
+.slide img, .slide video{ display:block; width:100%; aspect-ratio:4/3; object-fit:cover; background:#000; }
+.slide figcaption{ padding:16px 22px 20px; }
+.slide h4{ margin:0 0 2px; font-family:var(--ff-display); font-size:1.05rem; }
+.slide p{ margin:0; color:var(--muted); font-size:0.92rem; }
+.carousel-ui{ display:flex; align-items:center; justify-content:center; gap:18px; margin-top:20px; }
+.car-btn{
+  width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:transparent;
+  color:var(--fg); cursor:pointer; display:grid; place-items:center; transition:border-color .2s, color .2s;
+}
+.car-btn:hover{ border-color:var(--accent); color:var(--accent); }
+.car-btn svg{ width:18px; height:18px; }
+.car-count{ color:var(--muted); font-size:0.9rem; min-width:56px; text-align:center; font-variant-numeric:tabular-nums; }
+
 /* ---------- responsive ---------- */
 @media (max-width: 980px){
   .nav-links{ display:none; }
@@ -545,6 +576,7 @@ footer a:hover{ color: var(--fg); }
 }
 
 @media (max-width: 560px){
+  .slide{ flex-basis:88%; }
   .hero{ padding-top: 150px; }
   .btn{ font-size: 0.88rem; padding: 12px 20px; }
   .marquee-wrap{ transform: rotate(-2deg) scale(1.06); }

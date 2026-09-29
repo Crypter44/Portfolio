@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jan Sammet — Robotics &amp; AI</title>
-<meta name="description" content="Jan Sammet — M.Sc. Robotics, Cognition, Intelligence student at TU Munich. Robotics, machine learning, and full-stack projects.">
+<title>Jan Sammet | Robotics &amp; AI</title>
+<meta name="description" content="Jan Sammet, M.Sc. Robotics, Cognition, Intelligence student at TU Munich. Robotics, machine learning, and full-stack projects.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0a'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%2322e0ff' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
     <a href="#top" class="logo">JAN<span>.</span>SAMMET</a>
     <nav class="nav-links">
       <a href="#work">Work</a>
+      <a href="#renders">Renders</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <div class="nav-icons">
@@ -35,6 +36,7 @@
 
 <div class="mobile-panel">
   <a href="#work">Work</a>
+  <a href="#renders">Renders</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
   <div class="mobile-icons">
@@ -54,8 +56,8 @@
     <div class="container hero-grid">
       <div class="hero-copy" data-reveal>
         <span class="eyebrow">Robotics &amp; AI</span>
-        <h1>Jan Sammet —<br>M.Sc. student,<br><em>TU Munich.</em></h1>
-        <p class="hero-sub">I build software across robotics, machine learning, and full-stack systems — from a cave-exploring drone and a kitchen robot's motion planning, to a from-scratch neural network library and the servers running underneath.</p>
+        <h1>Hi, I'm Jan.<br>Robotics student<br><em>at TU Munich.</em></h1>
+        <p class="hero-sub">M.Sc. student in Robotics, Cognition, Intelligence at TU Munich. Projects so far include autonomous cave exploration with a drone, motion planning for a kitchen robot, game AI, and a neural network library written from scratch. Scroll down to see them.</p>
         <div class="hero-ctas">
           <a href="#work" class="btn primary">View Projects</a>
           <a href="https://github.com/Crypter44" target="_blank" rel="noopener" class="btn">
@@ -80,9 +82,9 @@
     <div class="marquee-track">
       <span>
         <span>Python</span><span>ROS2</span><span>Reinforcement Learning</span><span>Kotlin / Android</span>
-        <span>C / C++</span><span>SLAM &amp; Path Planning</span><span>REST APIs</span><span>Motion Planning</span>
+        <span>C / C++</span><span>SLAM &amp; Path Planning</span><span>REST APIs</span><span>Motion Planning</span><span>Physics Simulation</span><span>Blender</span><span>3D Modelling &amp; Animation</span>
         <span>Python</span><span>ROS2</span><span>Reinforcement Learning</span><span>Kotlin / Android</span>
-        <span>C / C++</span><span>SLAM &amp; Path Planning</span><span>REST APIs</span><span>Motion Planning</span>
+        <span>C / C++</span><span>SLAM &amp; Path Planning</span><span>REST APIs</span><span>Motion Planning</span><span>Physics Simulation</span><span>Blender</span><span>3D Modelling &amp; Animation</span>
       </span>
     </div>
   </div>
@@ -94,7 +96,7 @@
         <span class="eyebrow">Selected Work</span>
         <h2>Things I've<br>built &amp; broken.</h2>
       </div>
-      <p>Five projects spanning robotics, game AI, deep learning from first principles, and the infrastructure to run it all.</p>
+      <p>Six projects: robotics, game AI, deep learning, physics simulation, and a home server.</p>
     </div>
 
     <!-- 01 Hestia -->
@@ -108,10 +110,10 @@
         </div>
       </div>
       <div class="project-body">
-        <div class="eyebrow-row"><span class="index-num">01</span><span class="eyebrow">Robotum — Advanced Project</span></div>
+        <div class="eyebrow-row"><span class="index-num">01</span><span class="eyebrow">Robotum: Advanced Project</span></div>
         <h3>Project Hestia</h3>
         <p class="project-sub">An autonomous, self-operating kitchen</p>
-        <p class="project-desc">Hestia's long-term vision is a kitchen that cooks, cleans, and operates itself — while still leaving room for a human to cook fully by hand whenever they want to. It's an advanced project under Robotum and still in its early stages: so far we've built working prototypes of the mobile base with a custom differential drive and AprilTag-based navigation, and developed collision-free manipulation planning for a Franka Emika arm, shown in the clip.</p>
+        <p class="project-desc">The long-term idea behind Hestia is a kitchen that cooks, cleans and runs itself, but still lets you cook by hand whenever you feel like it. It's an advanced project at Robotum and still early days. So far we have working prototypes of the mobile base (custom differential drive, AprilTag navigation) and collision-free motion planning for a Franka Emika arm, which is what you see in the clip.</p>
         <div class="tag-row">
           <span class="tag">Franka Emika Panda</span>
           <span class="tag">Motion Planning</span>
@@ -138,10 +140,10 @@
         </div>
       </div>
       <div class="project-body">
-        <div class="eyebrow-row"><span class="index-num">02</span><span class="eyebrow">Team Project — ROS2</span></div>
+        <div class="eyebrow-row"><span class="index-num">02</span><span class="eyebrow">Team Project: ROS2</span></div>
         <h3>Autonomous Systems Challenge</h3>
         <p class="project-sub">A drone that explores caves on its own</p>
-        <p class="project-desc">A ROS2 software stack for a UAV that autonomously explores and maps an unknown cave system — finding landmarks and recording their positions without a human at the controls. My focus was the exploration logic and path planning that decide where the drone flies next. The clip above is the point cloud being built live, sped up; the stills show the finished reconstruction.</p>
+        <p class="project-desc">A ROS2 software stack for a UAV that explores and maps an unknown cave system on its own, finds landmarks and records where they are, with nobody at the controls. I worked on the exploration logic and path planning, i.e. the part that decides where the drone flies next. The clip shows the point cloud being built live (sped up), the stills show the finished reconstruction.</p>
         <div class="tag-row">
           <span class="tag">ROS2</span>
           <span class="tag">SLAM</span>
@@ -162,10 +164,10 @@
         </div>
       </div>
       <div class="project-body">
-        <div class="eyebrow-row"><span class="index-num">03</span><span class="eyebrow">Personal Project — Android</span></div>
+        <div class="eyebrow-row"><span class="index-num">03</span><span class="eyebrow">Personal Project: Android</span></div>
         <h3>Reversi</h3>
         <p class="project-sub">A Minimax AI you can actually lose to</p>
-        <p class="project-desc">A native Android build of the classic strategy game Reversi (Othello). The interesting part is the opponent: a Minimax algorithm with alpha-beta pruning, with several board-evaluation heuristics implemented and compared against each other for playing strength and search depth.</p>
+        <p class="project-desc">A native Android version of the classic board game Reversi (Othello). The fun part is the opponent: Minimax with alpha-beta pruning, plus several board-evaluation heuristics that I pitted against each other to see which plays strongest at which search depth.</p>
         <div class="tag-row">
           <span class="tag">Kotlin</span>
           <span class="tag">Android</span>
@@ -192,10 +194,10 @@
         </div>
       </div>
       <div class="project-body">
-        <div class="eyebrow-row"><span class="index-num">04</span><span class="eyebrow">Personal Project — Machine Learning</span></div>
+        <div class="eyebrow-row"><span class="index-num">04</span><span class="eyebrow">Personal Project: Machine Learning</span></div>
         <h3>NN</h3>
         <p class="project-sub">A neural network library, built from scratch</p>
-        <p class="project-desc">A from-scratch neural network library in Python, inspired by libraries like PyTorch but built for understanding rather than convenience — covering the full loop of building, training, and evaluating a network. The clip is a small classifier learning its decision boundary live, epoch by epoch.</p>
+        <p class="project-desc">A neural network library in Python, written from scratch. It's inspired by PyTorch but built to understand what's going on rather than to be convenient, and covers the whole loop of building, training and evaluating a network. The clip shows a small classifier learning its decision boundary, epoch by epoch.</p>
         <div class="tag-row">
           <span class="tag">Python</span>
           <span class="tag">Backpropagation</span>
@@ -211,16 +213,53 @@
       </div>
     </article>
 
-    <!-- 05 Home Server -->
+    <!-- 05 Game Physics -->
     <article class="project" data-reveal>
+      <div class="project-media">
+        <div class="video-frame square">
+          <video poster="assets/img/poster-physics-fluid.jpg" preload="none" muted playsinline>
+            <source src="assets/video/game-physics-fluid.mp4" type="video/mp4">
+          </video>
+          <div class="play-btn"><div class="circle"><svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg></div></div>
+        </div>
+        <div class="video-frame square">
+          <video poster="assets/img/poster-physics-heat.jpg" preload="none" muted playsinline>
+            <source src="assets/video/game-physics-heat.mp4" type="video/mp4">
+          </video>
+          <div class="play-btn"><div class="circle"><svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg></div></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="eyebrow-row"><span class="index-num">05</span><span class="eyebrow">Personal Project: Simulation</span></div>
+        <h3>Game Physics</h3>
+        <p class="project-sub">Fake it till it looks real</p>
+        <p class="project-desc">Three physics simulations in Python, written with NumPy and SciPy and rendered with Matplotlib. They're not meant to be physically exact, the goal is something that looks right and is cheap enough to run in real time. There's a heated plate (heat spreading from a single hotspot, solved with finite differences, forward and implicit Euler), a cloth (a grid of masses joined by structural, shear and flexion springs, integrated with RK2 or implicit Euler) and a fluid (vortices evolving under the incompressible Navier-Stokes equations, with semi-Lagrangian advection and a pressure projection on a staggered grid).</p>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">NumPy / SciPy</span>
+          <span class="tag">Finite Differences</span>
+          <span class="tag">Spring-Mass Systems</span>
+          <span class="tag">Navier-Stokes</span>
+        </div>
+        <div class="project-links">
+          <a class="btn" href="https://github.com/Crypter44/game-physics" target="_blank" rel="noopener">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 06 Home Server -->
+    <article class="project reverse" data-reveal>
       <div class="project-media">
         <img class="single" src="assets/img/homeserver-01.jpg" alt="Athena self-hosted dashboard showing storage array, CPU, memory, and services" loading="lazy">
       </div>
       <div class="project-body">
-        <div class="eyebrow-row"><span class="index-num">05</span><span class="eyebrow">Personal Project — Infrastructure</span></div>
+        <div class="eyebrow-row"><span class="index-num">06</span><span class="eyebrow">Personal Project: Home Lab</span></div>
         <h3>Home Server</h3>
         <p class="project-sub">Self-hosted infrastructure, REST API included</p>
-        <p class="project-desc">A Python backend exposing a REST API, paired with a companion Android client built in Material 3 for remote control. Athena, the dashboard above, is the day-to-day control panel sitting on top — keeping an eye on the storage array, system load, and the small constellation of self-hosted services (DNS, SSO, media library, backups) running on the box.</p>
+        <p class="project-desc">A Python backend with a REST API, plus an Android app (Material 3) to control it remotely. Athena, the dashboard above, is the everyday control panel on top. It shows the storage array, system load and the handful of self-hosted services (DNS, SSO, media library, backups) running on the box.</p>
         <div class="tag-row">
           <span class="tag">Python</span>
           <span class="tag">REST API</span>
@@ -230,6 +269,46 @@
       </div>
     </article>
 
+  </section>
+
+  <!-- RENDERS -->
+  <section class="renders container" id="renders">
+    <div class="section-head" data-reveal>
+      <div>
+        <span class="eyebrow">3D &amp; Animation</span>
+        <h2>Blender,<br>for fun.</h2>
+      </div>
+      <p>3D modelling and animation in Blender: one full animation render and a selection of stills.</p>
+    </div>
+
+    <div class="render-feature" data-reveal>
+      <div class="video-frame">
+        <video poster="assets/img/poster-mech-spider.jpg" preload="none" playsinline>
+          <source src="assets/video/blender-mech-spider.mp4" type="video/mp4">
+        </video>
+        <div class="play-btn"><div class="circle"><svg viewBox="0 0 24 24"><polygon points="6,4 20,12 6,20"/></svg></div></div>
+      </div>
+      <div class="render-caption">
+        <h3>Mech Spider</h3>
+        <p>A mechanical spider walking across a marked floor. Full animation render, sound on. Disclaimer: I made this one by following a tutorial.</p>
+      </div>
+    </div>
+
+    <div class="carousel" data-reveal>
+      <div class="carousel-track">
+        <figure class="slide"><video autoplay muted loop playsinline preload="none" poster="assets/img/poster-donut.jpg"><source src="assets/video/blender-donut-loop.mp4" type="video/mp4"></video><figcaption><h4>Donut Loop</h4><p>Anyone who learned Blender needs to show off their donut! Here is mine: chocolate glaze, falling sprinkles, and a seamless 15 s loop.</p></figcaption></figure>
+        <figure class="slide"><img src="assets/img/blender-lightsaber.jpg" alt="Green lightsaber on a reflective black surface"><figcaption><h4>Lightsaber</h4><p>Hard-surface modelling with a glowing blade and a mirror floor.</p></figcaption></figure>
+        <figure class="slide"><img src="assets/img/blender-drone.jpg" alt="White spherical drone with number 166 and four gun pods"><figcaption><h4>Oblivion Drone</h4><p>Drone 166, a fan recreation of the sentry from the movie Oblivion.</p></figcaption></figure>
+        <figure class="slide"><img src="assets/img/blender-orrery.jpg" alt="Glowing sun on an ornate steampunk orbital platform"><figcaption><h4>Steampunk Orrery</h4><p>A glowing sun on an engraved platform, with a small planet on its own orbit rail.</p></figcaption></figure>
+        <figure class="slide"><img src="assets/img/blender-earth.jpg" alt="Close-up of the Earth with a glass atmosphere shell"><figcaption><h4>Earth, with Atmosphere</h4><p>Close-up with the atmosphere on: an abstract glass shell filled with gas.</p></figcaption></figure>
+        <figure class="slide"><img src="assets/img/blender-earth-close.jpg" alt="Close-up of the Earth without an atmosphere, continents catching the light"><figcaption><h4>Earth, no Atmosphere</h4><p>Another close-up, this time without the atmosphere.</p></figcaption></figure>
+      </div>
+      <div class="carousel-ui">
+        <button class="car-btn" data-dir="-1" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <span class="car-count">1 / 6</span>
+        <button class="car-btn" data-dir="1" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
   </section>
 
   <!-- ABOUT -->
@@ -242,8 +321,8 @@
     </div>
     <div class="about-grid">
       <div class="about-bio" data-reveal>
-        <p>I'm a first-year M.Sc. student in Robotics, Cognition, Intelligence at the Technical University of Munich, after finishing a B.Sc. in Computer Science at TU Darmstadt with a final GPA of 1.4. My bachelor's thesis looked at decentralized control of urban water distribution networks using multi-agent reinforcement learning.</p>
-        <p>Across the projects on this page — drone path-planning, game-tree search, from-scratch deep learning, and self-hosted infrastructure — the common thread is software that has to make its own decisions: robotics, machine learning, and the backend systems that hold it all together.</p>
+        <p>I'm a first-year M.Sc. student in Robotics, Cognition, Intelligence at the Technical University of Munich. Before that I did a B.Sc. in Computer Science at TU Darmstadt (final GPA 1.4). My bachelor's thesis was about controlling urban water distribution networks in a decentralized way with multi-agent reinforcement learning.</p>
+        <p>I like anything technical, but robotics and ML are what I keep coming back to :) Project work so far covers drone path planning, game-tree search, deep learning from scratch and physics simulation. Outside of that I do 3D modelling and animation in Blender and run a home server.</p>
         <div class="skill-groups">
           <div class="skill-group">
             <h4>Highly Proficient</h4>
@@ -259,6 +338,7 @@
               <span class="chip">Android</span>
               <span class="chip">C / C++</span>
               <span class="chip">SQL</span>
+              <span class="chip">Blender (3D, Animation, Rendering)</span>
             </div>
           </div>
           <div class="skill-group">
@@ -270,8 +350,8 @@
           <div class="skill-group">
             <h4>Languages</h4>
             <div class="chip-row">
-              <span class="chip">German — Native</span>
-              <span class="chip">English — Fluent</span>
+              <span class="chip">German (native)</span>
+              <span class="chip">English (fluent)</span>
             </div>
           </div>
         </div>
@@ -279,22 +359,22 @@
       <div data-reveal>
         <ul class="timeline">
           <li>
-            <span class="t-year">2025 — Present</span>
+            <span class="t-year">2025 to now</span>
             <h4>M.Sc. Robotics, Cognition, Intelligence</h4>
             <p>Technical University of Munich · currently 2nd semester · GPA 2.0</p>
           </li>
           <li>
-            <span class="t-year">2021 — 2025</span>
+            <span class="t-year">2021 to 2025</span>
             <h4>B.Sc. Computer Science</h4>
             <p>Technical University of Darmstadt · GPA 1.4 · Thesis: Decentralized Operation of Urban Water Distribution Networks Using Multi-Agent Reinforcement Learning</p>
           </li>
           <li>
-            <span class="t-year">2019 — 2021</span>
+            <span class="t-year">2019 to 2021</span>
             <h4>Abitur</h4>
             <p>Taunusgymnasium, Königstein · Grade 1.3 · Advanced courses: Maths, Physics</p>
           </li>
           <li>
-            <span class="t-year">2018 — 2019</span>
+            <span class="t-year">2018 to 2019</span>
             <h4>Exchange Year</h4>
             <p>St. Michaels University School, Victoria BC, Canada</p>
           </li>
@@ -305,7 +385,7 @@
           <span class="tag">Piano &amp; Saxophone</span>
           <span class="tag">Ballroom Dancing</span>
           <span class="tag">Coastal Sailing (SKS Skipper)</span>
-          <span class="tag">AI Art — Stable Diffusion</span>
+          <span class="tag">AI Art (Stable Diffusion)</span>
           <span class="tag">Math Tutoring</span>
         </div>
       </div>
@@ -316,8 +396,8 @@
   <section class="contact container" id="contact">
     <div data-reveal>
       <span class="eyebrow">Get in touch</span>
-      <h2>Wanna<br><em>connect</em>?</h2>
-      <p>No inbox to check here — find me on LinkedIn or dig through the code on GitHub.</p>
+      <h2>Want to<br><em>connect</em>?</h2>
+      <p>No contact form here. Just message me on LinkedIn or dig through the code on GitHub.</p>
       <div class="contact-ctas">
         <a class="btn primary" href="https://www.linkedin.com/in/jan-sammet-13031b356" target="_blank" rel="noopener">
           Connect on LinkedIn
@@ -333,7 +413,7 @@
 
   <footer class="container">
     <span>© 2026 Jan Sammet</span>
-    <span>Robotics, Cognition, Intelligence — TU Munich</span>
+    <span>Robotics, Cognition, Intelligence, TU Munich</span>
   </footer>
 
 </main>
